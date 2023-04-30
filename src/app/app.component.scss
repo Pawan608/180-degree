@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-family: 'Roboto', sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  // padding: 0;
+  overflow: hidden;
+  position: relative;
+  //   position: absolute;
+  //   &_body {
+  //     position: absolute;
+  //     // top: 0;
+  //   }
+}
+.container_body {
+  position: absolute;
+  top: 0rem;
+  left: 0px;
+  background-color: #424141;
+  height: 100vh;
+  width: 100vw;
+}
+.navbar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60rem;
+  width: 7rem;
+  background-color: #424141;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  &__svg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-image: url(../assets/curve.svg);
+    // background-repeat: no-repeat;
+    // // object-fit: contain;
+    // background-size: 7rem 10rem;
+    & svg {
+      cursor: pointer;
+    }
+  }
+}
